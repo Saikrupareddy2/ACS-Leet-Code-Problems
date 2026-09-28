@@ -1,8 +1,8 @@
-
-        class Solution {
+class Solution {
     public int firstUniqChar(String s) {
-        // Step 1: Count frequencies
         int[] freq = new int[26]; // only lowercase letters
+        
+        // Step 1: Count frequencies
         for (char c : s.toCharArray()) {
             freq[c - 'a']++;
         }
@@ -14,9 +14,6 @@
             }
         }
         
-        // Step 3: No unique character
         return -1;
     }
 }
-
-    
